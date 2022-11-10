@@ -38,10 +38,6 @@
 .cocktailIcon {
      font-size: 2rem;
 }
-
-.row:before, .row:after {
-     display: flex !important;
-     }
 /******************************************
 /* LAYOUT
 /*******************************************/
