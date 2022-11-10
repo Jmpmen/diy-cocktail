@@ -59,7 +59,9 @@ function populateDrink(drinks){
 
     cards.innerHTML = `
         <div class="card h-100 text">
-            <img src=${drinks.strDrinkThumb} class="card-img-top" alt="${drinks.strDrinkThumb}">
+            <div>
+                <img src=${drinks.strDrinkThumb} class="card-img-top" alt="${drinks.strDrinkThumb}">
+            </div>
             <div class="card-body">
                 <h2 class="card-title text-white bg-success text-center">${drinks.strDrink}</h2>
                 <h3 class="text-success text-center">Ingredients</h3>
