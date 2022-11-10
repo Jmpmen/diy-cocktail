@@ -83,7 +83,6 @@ function ingredients(drinks){
         str += `<li>${drinks[measure] || ""} ${drinks[ingredients]}</li>`
         }
     }
-    console.log(str)
     return str
 }
 
