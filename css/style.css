@@ -1,7 +1,7 @@
 /* Box Model Hack */
-* {
+/* * {
      box-sizing: border-box;
-}
+} */
 
 /* Clear fix hack */
 .clearfix:after {
