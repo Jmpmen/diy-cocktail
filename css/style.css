@@ -1,7 +1,7 @@
 /* Box Model Hack */
-/* * {
+* {
      box-sizing: border-box;
-} */
+}
 
 /* Clear fix hack */
 .clearfix:after {
@@ -22,13 +22,13 @@
 /*******************************************/
 
 .roboto-slab {
-     font-family: 'Roboto Slab', 'Helvetica' !important;
+     font-family: 'Roboto Slab', 'Helvetica';
 }
 
 .banner {
      background-image: url("../images/banner.jpg");
      background-size: cover;
-     height: 500px;
+     height: 32rem;
 }
 
 #liveAlertPlaceholder {
