@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>DIY Cocktail</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-dark bg-gradient">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-8 order-2 order-md-1 border banner"></div>
+				<div class="col-md-4 order-1 order-md-2 bg-success bg-gradient">
+					<div class="row mt-4 text-end">
+						<a href="https://diy-cocktail.netlify.app"><i class="fa-solid fa-martini-glass-citrus text-white cocktailIcon"></i></a>
+					</div>
+					<div class="row mt-5 mb-3 text-start text-white">
+						<h1 class="roboto-slab">DO<br>IT<br>YOURSELF<br>COCKTAIL</h1>
+					</div>
+					<div id="liveAlertPlaceholder"></div>
+					<div class="align-items-end text-center">
+						<form class="input-group">
+							<input type="text" placeholder="Margarita" class="form-control roboto-slab border-right-0">
+							<button type="submit"  class="bi bi-search searchButton text-success input-group-text"></button>
+						</form>
+						<button class="roboto-slab btn btn-light randomButton text-black bg-gradient mt-3">Random Drink</button>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-3 g-5 cocktails justify-content-center"></div>
+		</div>
+
+		<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+			<a href="https://jmpmen.netlify.app" class="col-md-6 d-flex align-items-center justify-content-end mb-3 mb-md-0 me-md-auto link-secondary text-white text-decoration-none">
+			<span>© James Michael Mendoza</span>
+			</a>
+			<ul class="nav col-md-6 justify-content-start">
+			<li><a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Jmpmen" role="button"><i class="fab fa-github"></i></a></li>
+			<li><a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/Jmpmen_" role="button"><i class="fab fa-twitter"></i></a></li>
+			<li><a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/jmpmen/" role="button"><i class="fab fa-linkedin-in"></i></a></li>
+			</ul>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	</body>
+</html>

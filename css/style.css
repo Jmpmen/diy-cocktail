@@ -1,0 +1,48 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.roboto-slab {
+     font-family: 'Roboto Slab', 'Helvetica' !important;
+}
+
+.banner {
+     background-image: url("../images/banner.jpg");
+     background-size: cover;
+     height: 500px;
+}
+
+#liveAlertPlaceholder {
+     height: 4rem;
+}
+
+.cocktailIcon {
+     font-size: 2rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
