@@ -1,19 +1,6 @@
+document.addEventListener('DOMContentLoaded', drinkRequest)
 document.querySelector('.searchButton').addEventListener('click', drinkRequest)
 document.querySelector('.randomButton').addEventListener('click', randomDrinkRequest)
-document.addEventListener('DOMContentLoaded', drinkRequest)
-
-const alertBootstrap = (message, type) => {
-    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-      `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('')
-  
-    alertPlaceholder.append(wrapper)
-  }
 
 async function drinkRequest(){
     const cocktail = document.querySelector('input').value
@@ -96,3 +83,16 @@ function clearDOM(){
     while (alertPlaceholder.firstChild)
     alertPlaceholder.removeChild(alertPlaceholder.firstChild)
 }
+
+function alertBootstrap(message, type) {
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '</div>'
+    ].join('')
+  
+    alertPlaceholder.append(wrapper)
+  }
