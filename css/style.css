@@ -39,10 +39,6 @@
      font-size: 2rem;
 }
 
-.row:before, .row:after {
-     display: none !important;
-}
-
 /******************************************
 /* LAYOUT
 /*******************************************/
