@@ -1,12 +1,9 @@
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const alertTrigger = document.getElementById('liveAlertBtn')
-const cocktailSection = document.querySelector('.cocktails')
-
 document.querySelector('.searchButton').addEventListener('click', drinkRequest)
 document.querySelector('.randomButton').addEventListener('click', randomDrinkRequest)
 document.addEventListener('DOMContentLoaded', drinkRequest)
 
 const alertBootstrap = (message, type) => {
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
     const wrapper = document.createElement('div')
     wrapper.innerHTML = [
       `<div class="alert alert-${type} alert-dismissible" role="alert">`,
@@ -57,6 +54,7 @@ async function randomDrinkRequest(){
 
 function populateDrink(drinks){
     const cards = document.createElement('div')
+    const cocktailSection = document.querySelector('.cocktails')
     cards.classList.add('col')
 
     cards.innerHTML = `
@@ -88,6 +86,9 @@ function ingredients(drinks){
 }
 
 function clearDOM(){
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const cocktailSection = document.querySelector('.cocktails')
+
     while (cocktailSection.firstChild)
     cocktailSection.removeChild(cocktailSection.firstChild)
 
