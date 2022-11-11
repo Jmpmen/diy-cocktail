@@ -22,7 +22,7 @@
 /*******************************************/
 
 .roboto-slab {
-     font-family: 'Roboto Slab', 'Helvetica';
+     font-family: 'Roboto Slab', 'Helvetica' !important;
 }
 
 .banner {

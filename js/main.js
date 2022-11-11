@@ -15,8 +15,11 @@ async function drinkRequest(){
 
         if (data.drinks === null){
             alertBootstrap('Drink not found.','danger')
+        }else if (data.drinks.length === 25){
+            data.drinks.forEach(drinks => populateDrink(drinks))
         }else{
             data.drinks.forEach(drinks => populateDrink(drinks))
+            document.getElementById('cocktailSection').scrollIntoView()
         }
 
     }catch(error){
@@ -29,10 +32,11 @@ async function randomDrinkRequest(){
     try{
         const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
         const data = await response.json()
-        console.log(data)
+        console.log(data.drinks)
         clearDOM()
 
-        data.drinks.forEach(drinks => populateDrink(drinks))
+        populateDrink(data.drinks[0])
+        document.getElementById('cocktailSection').scrollIntoView()
 
     }catch(error){
         console.log(error)
